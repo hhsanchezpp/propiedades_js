@@ -1,0 +1,59 @@
+*{
+    text-align: center;
+}
+
+body{
+    background: #090909;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    width:100vw;
+}
+
+nav{
+    padding: 20px 5%; 
+    border-right: solid 1px white;
+    height:100vh;
+
+}
+
+nav section {
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
+}
+nav div{
+    margin-bottom: 20px;
+}
+
+.propiedades {
+    padding: 0px 15px;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    
+}
+@media (max-width: 1360px) {
+    .propiedades {
+        grid-template-columns: repeat(3, 2fr);
+    }
+}
+.propiedad{ 
+     background: rgba(58, 170, 97, 0.763); 
+}
+.propiedad .img{
+    margin: 7px;
+    height: 150px;
+    max-width: 250px;
+    width: 250px;
+    background-size: cover;
+    background-position: center;
+}
+.propiedad section{
+    padding: 10px 20px;
+
+}
+
+.form-control {
+    max-width: 70px;
+}
